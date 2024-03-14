@@ -1,0 +1,76 @@
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 10px;
+    text-align: right;
+    margin: 3px 2px;
+    box-sizing: content-box;
+  }
+  .body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  .container {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.body{
+  background-color:lightblue;
+}
+
+/* Centering the icons and links */
+div {
+  text-align: center;
+}
+
+/* Styling the icons */
+.fa {
+  margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+/* Styling the links */
+a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set link color */
+  font-size: 18px; /* Set font size */
+}
+
+/* Hover effect for links */
+a:hover {
+  color: #4314c4; /* Change color on hover */
+}
+
+.signup-section {
+    margin-top: 20px;
+  }
+  
+  .signup-section p {
+    color: #666;
+  }
+  
+  .signup-section a {
+    color: #007bff;
+  }
+  .social-icons {
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: #0056b3;
+  }
+  
+  
