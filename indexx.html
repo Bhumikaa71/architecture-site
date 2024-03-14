@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture website</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+       <h3> 𝐵𝒮𝒜𝓇𝒸𝒽𝒾𝓉𝑒𝒸𝓉X</h3>
+        <!-- <img src="image/logo.PNG" width="20%" height="10%"> -->
+      </a>
+      <ul class="menu-links">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li class="language-item">
+          <a href="#project">project</a>
+        </li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li class="logIn-btn"><a href="#logIn">LogIn</a></li>
+        <li class="join-btn"><a href="#">Join Us</a></li>
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="content" id="Home">
+      <h1>Find the right service, here itself</h1>
+      <form action="#" class="search-form">
+        <input type="text" placeholder="Search for any service..." required>
+        <button class="material-symbols-outlined" type="sumbit">search</button>
+      </form>
+      <div class="popular-tags">
+        Popular Design:
+        <ul class="tags">
+          <li><a href="#">Setting Room design</a></li>
+          <li><a href="#">Bedroom Design</a></li>
+          <li><a href="#">Kitchen Design</a></li>
+          <li><a href="#">Bathroom Design</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="content" id="Contact">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">About us</div>
+          <p>At the heart of our practice lies a client-centric philosophy. We believe in forging strong partnerships with our clients, understanding their unique visions, and translating them into architectural marvels. </p>
+        </div>
+        <div class="lower">
+          <div class="topic">Contact</div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>024-46825</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>bsarchi@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="middle box">
+        <div class="topic">Our Services</div>
+        <div><a href="#">Architectural Design</a></div>
+        <div><a href="#">Interior Design Excellence</a></div>
+        <div><a href="#">Project Management Mastery</a></div>
+        <div><a href="#">Sustainable Design Solution</a></div>
+        <div><a href="#">Feasibility Studies and Planning</a></div>
+        <div><a href="#">3D Visualization and Rendering</a></div>
+      </div>
+      <div class="right box">
+        <div class="topic">join us</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+   
+  </footer>
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+
+
+   
+  </script>
+</body>
+</html>
