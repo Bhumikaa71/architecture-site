@@ -21,14 +21,14 @@
       </a>
       <ul class="menu-links">
         <li><a href="#Home">Home</a></li>
-        <li><a href="#About.html">About</a></li>
+        <li><a href="About.html">About</a></li>
         <li class="language-item">
-          <a href="#project.html">project</a>
+          <a href="project.html">project</a>
         </li>
-        <li><a href="#Team.html">Team</a></li>
+        <li><a href="Team.html">Team</a></li>
         <li><a href="#Contact">Contact</a></li>
-        <li class="logIn-btn"><a href="#login.html">LogIn</a></li>
-        <li class="join-btn"><a href="#joinus.html">Join Us</a></li>
+        <li class="logIn-btn"><a href="login.html">LogIn</a></li>
+        <li class="join-btn"><a href="joinus.html">Join Us</a></li>
         <span id="close-menu-btn" class="material-symbols-outlined">close</span>
       </ul>
       <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
@@ -38,7 +38,7 @@
   <section class="hero-section">
     <div class="content" id="Home">
       <h1>Find the right service, here itself</h1>
-      <form action="#" class="search-form">
+      <form action="search.php" class="search-form">
         <input type="text" placeholder="Search for any service..." required>
         <button class="material-symbols-outlined" type="sumbit">search</button>
       </form>
@@ -81,11 +81,13 @@
         <div><a href="#">Feasibility Studies and Planning</a></div>
         <div><a href="#">3D Visualization and Rendering</a></div>
       </div>
+      
       <div class="right box">
         <div class="topic">Contact us</div>
-        <form action="#">
-          <input type="text" placeholder="Enter email address">
+        <form action="login.php" method="post">
+           <input type="email" name="name" placeholder="Enter email address" required=""> 
           <input type="submit" name="" value="Send">
+        </form>
           <div class="media-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -93,7 +95,7 @@
             <a href="#"><i class="fab fa-youtube"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
-        </form>
+        
       </div>
     </div>
    
