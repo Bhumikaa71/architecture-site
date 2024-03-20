@@ -11,27 +11,28 @@
         echo "success insertion";
 
     }
-    ?>
+?>
 
-    <?php
+<?php
     $con=mysqli_connect("localhost",'root',"","bsarchitect");
-if(isset($_GET['log'])){
+    if(isset($_GET['log'])){
     $x = $_GET['lemail'];
     $y =$_GET['lpswd'];
 
     $q = "SELECT email,password from  users where email='$x' and password='$y'"; 
     $run = mysqli_query($con, $q);
     $count=mysqli_num_rows($run);
-
-	}
-    if($count !== 0)
+    if($count!==0)
         echo "Success insertion";
     else
         echo "Error: " . mysqli_error($con);
+	}
 
-      mysqli_close($con);
+    mysqli_close($con);
 
 ?>
+
+
 
  
 
