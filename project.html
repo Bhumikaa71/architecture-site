@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>our project</title>
     <link rel="stylesheet" href="project.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> 
 </head>
 <body>
     <header>
@@ -29,5 +30,58 @@
         <h2>project</h2>
         <p> A 3D project for a modern residential building that showcases both exterior and interior design. The exterior features sleek architectural lines, large windows, and a mix of natural materials like wood and stone. The landscaping complements the overall design, creating a harmonious blend with the surroundings.</p>
       </div>
+
+     
+        </head>
+        <body>
+          <div class="product-viewer"> 
+            <div class="viewer-container"> 
+                <img src="image/3d-view-house-model.jpg" 
+                     class="product-image"
+                     id="productImage" 
+                     alt="Product Image"> 
+            </div> 
+            <div class="controls"> 
+                <button id="prevBtn" class="control-button"> 
+                  Previous 
+                  </button> 
+                <button id="nextBtn" class="control-button"> 
+                  Next 
+                  </button> 
+            </div> 
+        </div> 
+
+        
 </body>
+<script>
+  const productImage =  
+    document.getElementById('productImage'); 
+const nextBtn =  
+    document.getElementById('nextBtn'); 
+const prevBtn =  
+    document.getElementById('prevBtn'); 
+const topBtn =  
+    document.getElementById('topBtn'); 
+const bottomBtn =  
+    document.getElementById('bottomBtn'); 
+  
+let currentFrame = 1; 
+const totalFrames = 36; 
+nextBtn.addEventListener('click', () => { 
+    if (currentFrame < totalFrames) { 
+        currentFrame++; 
+        update(); 
+    } 
+}); 
+prevBtn.addEventListener('click', () => { 
+    if (currentFrame > 1) { 
+        currentFrame--; 
+        update(); 
+    } 
+}); 
+function update() { 
+    const rotation = (currentFrame - 1) * (360 / totalFrames); 
+    productImage.style.transform = `rotateY(${rotation}deg)`; 
+}
+</script>
 </html>

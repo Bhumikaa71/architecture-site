@@ -5,7 +5,7 @@ header {
   width: 100%;
   z-index: 1;
   padding: 20px;
-  background-color: #ffffff56;
+  background-color: #f7dddd56;
 
 }
 h3{
@@ -82,7 +82,7 @@ header .navbar {
   }
   .body {
     font-family: Arial, sans-serif;
-    background-color: goldenrod;
+    background-color: rgb(244, 220, 160);
   }
   .container {
     justify-content: center;
